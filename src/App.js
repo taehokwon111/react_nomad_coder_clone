@@ -40,7 +40,7 @@ const foodILike = [
 function App() {
   return ( 
   <div className="App">
-    <h1>테스트입니다</h1>
+    <h1>test</h1>
     {foodILike.map(dish => (
         <Food name={dish.name} picture={dish.image} />
       ))}
