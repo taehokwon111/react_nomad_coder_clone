@@ -37,13 +37,16 @@ const foodILike = [
   }
 ];
 
+function renderFood(dish){
+console.log(dish)
+return <Food name={dish.name} picture={dish.image}></Food>
+}
+
 function App() {
   return ( 
   <div className="App">
     <h1>test</h1>
-    {foodILike.map(dish => (
-        <Food name={dish.name} picture={dish.image} />
-      ))}
+    {foodILike.map(renderFood)}
     </div>
     )
 
